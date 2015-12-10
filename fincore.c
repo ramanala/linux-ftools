@@ -152,14 +152,14 @@ int main(int argc, char *argv[]) {
 
     int i = 1; 
 
-    int pages         = 1;
+    int pages         = 0;
     int summarize     = 0;
     int only_cached   = 0;
 
     for( ; i < argc; ++i ) {
 
-        if ( strcmp( "--pages=false" , argv[i] ) == 0 ) {
-            pages = 0;
+        if ( strcmp( "--pages=true" , argv[i] ) == 0 ) {
+            pages = 1;
             ++fidx;
         }
 
